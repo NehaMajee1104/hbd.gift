@@ -1,0 +1,392 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swal2-icon.no-border {
+    background: none !important; 
+    border: none !important;    
+    font-size: 3rem;           
+    line-height: 1;             
+    width: auto !important;   
+    height: auto !important;     
+    margin: 0;                  
+    padding: 0;                   
+}
+  
+.song {
+    visibility: hidden;
+}
+
+.swal2-container.swal2-backdrop-show,
+.swal2-container.swal2-noanimation {
+    background: rgb(255 255 255 / 40%) !important;
+}
+
+.swal2-popup {
+    background: rgb(255 255 255 / 0%) !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+    backdrop-filter: blur(3px) !important;
+    -webkit-backdrop-filter: blur(3px) !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+
+.swal2-styled.swal2-cancel:focus,
+.swal2-styled.swal2-confirm:focus,
+.swal2-styled.swal2-cancel:active,
+.swal2-styled.swal2-confirm:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+button:focus,
+button:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.swal2-styled.swal2-confirm {
+    width: 100px;
+}
+
+.swal2-styled.swal2-cancel {
+    width: 100px;
+}
+
+.container {
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    visibility: hidden;
+    width: 100vw;
+}
+
+.container > div {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 30vh;
+}
+
+.one {
+    font-size: 4.5rem;
+}
+
+.two {
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+
+.three {
+    font-size: 3rem;
+}
+
+.four .text-box {
+    top: -200px;
+    border: 3px solid #FFB5C0;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    width: 85%;
+    box-sizing: border-box;
+}
+.four {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px; 
+    gap: 20px; 
+    text-align: center; 
+    width: 100%; 
+  }
+
+.four img {
+    position: absolute;  
+    left: 50%;
+    transform: translateX(-50%); 
+    bottom:40px;
+}
+
+
+.text-box {
+    max-width: 800px; 
+    width: 90%; 
+    margin: 0 auto; 
+  }
+.text-box span {
+    visibility: hidden;
+}
+
+.four img {
+    max-width: 100%; 
+    height: auto;
+    margin: 0 auto; 
+    display: block;
+  }
+
+
+.five p {
+    font-size: 2rem;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+.idea-3 strong {
+    border-radius: 3px;
+    display: inline-block;
+    padding: 3px 5px;
+}
+
+.five .idea-5 {
+    font-size: 4rem;
+}
+
+.idea-5 span,
+.idea-6 span,
+.wish-hbd span {
+    display: inline-block;
+}
+
+.idea-6 span {
+    font-size: 12rem;
+}
+.six {
+    position: relative;
+    top: -100px;
+   
+}
+
+.six img {
+    display: inline-block;
+    height: 50%;
+    width: 50%;
+    
+}
+
+.wish {
+    position: absolute;  
+    top: 85%;          
+    left: 50%;            
+    transform: translateX(-50%); 
+}
+
+
+.baloons img {
+    display: inline-block;
+    position: absolute;
+}
+
+.baloons img:nth-child(even) {
+    left: -10%;
+}
+
+.baloons img:nth-child(odd) {
+    right: -10%;
+}
+
+.baloons img:nth-child(3n + 0) {
+    left: 30%;
+}
+
+.seven,
+.eight {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.eight svg {
+    left: 0;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 25px;
+    z-index: -1;
+}
+
+.eight svg:nth-child(1) {
+    fill: #bd6ecf;
+    left: 5vw;
+    top: 7vh;
+}
+
+.eight svg:nth-child(2) {
+    fill: #7dd175;
+    left: 35vw;
+    top: 23vh;
+}
+
+.eight svg:nth-child(3) {
+    fill: #349d8b;
+    left: 23vw;
+    top: 33vh;
+}
+
+.eight svg:nth-child(4) {
+    fill: #347a9d;
+    left: 57vw;
+    top: 43vh;
+}
+
+.eight svg:nth-child(5) {
+    fill: #c66053;
+    left: 7vw;
+    top: 68vh;
+}
+
+.eight svg:nth-child(6) {
+    fill: #bfaa40;
+    left: 77vw;
+    top: 42vh;
+}
+
+.eight svg:nth-child(7) {
+    fill: #e3bae8;
+    left: 83vw;
+    top: 68vh;
+}
+
+.eight svg:nth-child(8) {
+    fill: #8762cb;
+    left: 37vw;
+    top: 86vh;
+}
+
+.eight svg:nth-child(9) {
+    fill: #9a90da;
+    left: 87vw;
+    top: 94vh;
+}
+
+.wish-hbd {
+    font-size: 1.5em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.wish h5 {
+    font-size: 2rem;
+    font-weight: lighter;
+    margin: 10px 0 0;
+}
+
+.nine p {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+#replay {
+    cursor: pointer;
+    z-index: 3;
+}
+
+/* Media Queries */
+
+@media (min-width: 1440px) {
+    .four {
+      flex-direction: row; 
+      gap: 50px; 
+      padding: 60px; 
+    }
+  
+    .text-box {
+      max-width: 800px; 
+    }
+  
+    .hbd-chatbox {
+      font-size: 26px; 
+      line-height: 1.8;
+    }
+  
+    .four img {
+      width: 45%; 
+    }
+  }
+  
+@media (min-width: 1440px) {
+    .four {
+      flex-direction: row; 
+      gap: 50px; 
+      max-width: 1400px; 
+      padding: 40px; 
+      margin: 0 auto; 
+    }
+  
+    .text-box {
+      max-width: 60%; 
+    }
+  
+    .hbd-chatbox {
+      font-size: 22px; 
+      line-height: 1.8; 
+    }
+  
+    .four img {
+      width: 40%; 
+    }
+  }
+  
+  @media (min-width: 1920px) {
+    .four {
+      max-width: 1600px; 
+      padding: 50px;
+      margin: 0 auto;
+    }
+  
+    .text-box {
+      max-width: 70%; 
+    }
+  
+    .hbd-chatbox {
+      font-size: 26px; 
+    }
+  
+    .four img {
+      width: 35%; 
+    }
+  }
+
+
+    .idea-5 span {
+        display: block;
+    }
+
+    .idea-6 span {
+        font-size: 6rem;
+        margin-right: 10px; 
+    }
+
+
+    .wish-hbd {
+        font-size: 1em;
+    }
+
+    .wish h5 {
+        font-size: 1.4rem;
+    }
+
+    .nine p {
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+
